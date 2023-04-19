@@ -68,10 +68,17 @@ class _HomePageState extends State<HomePage> {
             crossAxisCount: orientation == Orientation.portrait ? 2 : 4,
             children: [
               CardCourses(
-                nome_curso: 'Cuidador Infantil',
+                nome_curso: 'Cuidador Escolar',
                 grau_curso: 'Profissionalizante',
                 descricao: 'DESCRIÇÃO',
                 url: '../../../assets/images/cuidador-infantil.png',
+                // rota: '/curso-cuidador-infantil',
+              ),
+              CardCourses(
+                nome_curso: 'Libras',
+                grau_curso: 'Capacitação',
+                descricao: 'DESCRIÇÃO',
+                url: '../../../assets/images/libras.jpg',
                 // rota: '/curso-cuidador-infantil',
               ),
               CardCourses(
@@ -79,13 +86,6 @@ class _HomePageState extends State<HomePage> {
                 grau_curso: 'Capacitação',
                 descricao: 'DESCRIÇÃO',
                 url: '../../../assets/images/saude_mental.jpg',
-                // rota: '/curso-cuidador-infantil',
-              ),
-              CardCourses(
-                nome_curso: 'COVID-19',
-                grau_curso: 'Capacitação',
-                descricao: 'DESCRIÇÃO',
-                url: '../../../assets/images/covid19.jpeg',
                 // rota: '/curso-cuidador-infantil',
               ),
               CardCourses(

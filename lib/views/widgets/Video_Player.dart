@@ -18,7 +18,7 @@ class _VideoAppState extends State<VideoApp> {
   void initState() {
     super.initState();
     _controller = VideoPlayerController.network(
-        'https://www.youtube.com/watch?v=JF-HVo1iwM4')
+        'assets/videos/CURSO GRATUITO CUIDADOR ESCOLAR - AULA 01.mp4')
       ..initialize().then((_) {
         // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});
