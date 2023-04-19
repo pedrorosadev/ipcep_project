@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                 // rota: '/curso-cuidador-infantil',
               ),
               CardCourses(
-                nome_curso: 'Enfrentamento da COVID-19',
+                nome_curso: 'COVID-19',
                 grau_curso: 'Capacitação',
                 descricao: 'DESCRIÇÃO',
                 url: '../../../assets/images/covid19.jpeg',
