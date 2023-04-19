@@ -13,11 +13,7 @@ class _Conteudo_CursoState extends State<Conteudo_Curso> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: const Image(
-          image: AssetImage('../assets/images/logo.png'),
-        ),
-      ),
+      appBar: AppBar(),
       body: Column(
         children: [
           Expanded(
@@ -33,7 +29,7 @@ class _Conteudo_CursoState extends State<Conteudo_Curso> {
                   ),
                 ),
                 Expanded(
-                  flex: 1,
+                  flex: 2,
                   child: Container(
                     color: Colors.black12,
                     child: ListView(children: [
@@ -77,7 +73,9 @@ class _Conteudo_CursoState extends State<Conteudo_Curso> {
                               ),
                             ),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pushNamed('/curso/prova');
+                          },
                           child: const Text(
                             'Prova',
                             style: TextStyle(fontSize: 18),

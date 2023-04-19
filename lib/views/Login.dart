@@ -18,16 +18,20 @@ class Login extends StatelessWidget {
                 //flex: 1,
                 child: Row(
                   children: [
-                    Image.asset('../../assets/images/logo.png'),
+                    Expanded(
+                      child: Image.asset('../../assets/images/logo.png'),
+                    ),
                     const SizedBox(
                       width: 10,
                     ),
-                    const Text(
-                      'Instituto de Psicologia Clínica Educacional e Profissional',
-                      style: TextStyle(
-                          fontSize: 18,
-                          color: Color(0xFF00B6E6),
-                          fontWeight: FontWeight.w800),
+                    const Expanded(
+                      child: Text(
+                        'Instituto de Psicologia Clínica Educacional e Profissional',
+                        style: TextStyle(
+                            fontSize: 18,
+                            color: Color(0xFF00B6E6),
+                            fontWeight: FontWeight.w800),
+                      ),
                     ),
                   ],
                 ),

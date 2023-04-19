@@ -6,4 +6,5 @@ class AppRoutes {
   static const Curso_SaudeMental = '/curso-saude-mental';
   static const Curso_Covid19 = '/curso-covid19';
   static const Curso_SaudeDigital = '/curso-saude-digital';
+  static const Provas_Simulados = '/curso/prova';
 }

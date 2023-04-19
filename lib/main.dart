@@ -4,9 +4,10 @@ import 'package:ipcep_project/views/Cadastrar.dart';
 import 'package:ipcep_project/views/Conteudo_Curso.dart';
 import 'package:ipcep_project/views/Home_Page.dart';
 import 'package:ipcep_project/views/Login.dart';
+import 'package:ipcep_project/views/Provas_Simulados.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         AppRoutes.Cadastrar: (_) => const Cadastrar(),
         AppRoutes.Login: (_) => const Login(),
         AppRoutes.Curso_CuidadorInfantil: (_) => const Conteudo_Curso(),
+        AppRoutes.Provas_Simulados: (_) => const ProvasSimulados(),
         // AppRoutes.Curso_Covid19: (_) => const ;
         // AppRoutes.Curso_SaudeMental: (_) => ;
         // AppRoutes.Curso_SaudeDigital: (_) => const;

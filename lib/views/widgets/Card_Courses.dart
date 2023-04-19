@@ -25,6 +25,9 @@ class CardCourses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final altura = MediaQuery.of(context).size.height;
+    final largura = MediaQuery.of(context).size.width;
+
     return GestureDetector(
       onTap: () {
         Navigator.of(context).pushNamed('/curso-cuidador-infantil');
@@ -33,6 +36,8 @@ class CardCourses extends StatelessWidget {
       child: OnHover(
         builder: (isHovered) {
           return Container(
+            height: altura * 0.4,
+            width: largura * 0.3,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               gradient: LinearGradient(
@@ -49,29 +54,40 @@ class CardCourses extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Expanded(
+                  flex: 4,
                   child: Image.asset(
                     url,
                   ),
                 ),
-                Text(
-                  nome_curso,
-                  style: const TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 18),
-                ),
-                Text(
-                  grau_curso,
-                  style: const TextStyle(
-                    fontStyle: FontStyle.italic,
-                    fontSize: 14,
-                    color: Color(0xFF787993),
+                Expanded(
+                  flex: 1,
+                  child: Text(
+                    nome_curso,
+                    style: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
                 ),
                 Expanded(
+                  flex: 1,
+                  child: Text(
+                    grau_curso,
+                    style: const TextStyle(
+                      fontStyle: FontStyle.italic,
+                      fontSize: 14,
+                      color: Color(0xFF787993),
+                    ),
+                  ),
+                ),
+                Expanded(
+                  flex: 2,
                   child: Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.all(10),
                     child: Text(
                       descricao,
-                      style: const TextStyle(fontSize: 10),
+                      style: const TextStyle(fontSize: 14),
                       textAlign: TextAlign.justify,
                     ),
                   ),
