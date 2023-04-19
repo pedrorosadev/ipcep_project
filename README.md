@@ -1,16 +1,20 @@
-# ipcep_project
+# IPCEP - CURSOS
 
-A new Flutter project.
+Projeto construído usando o Framework Flutter.
 
-## Getting Started
+## Imagens do Projeto versão Web/App:
 
-This project is a starting point for a Flutter application.
+![Mobile Version](/assets/images/github/imagem2_app.png)
+![Mobile Version](/assets/images/github/imagem1_app.png)
+![Mobile Version](/assets/images/github/imagem3_app.png)
+![Mobile Version](/assets/images/github/imagem4_app.png)
+===
+![Web Version](/assets/images/github/imagem1.png)
+![Web Version](/assets/images/github/imagem2.png)
+![Web Version](/assets/images/github/imagem3.png)
+![Mobile Version](/assets/images/github/imagem4.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
