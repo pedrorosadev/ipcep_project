@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ipcep_project/routes/app_routes.dart';
 import 'package:ipcep_project/views/Cadastrar.dart';
+import 'package:ipcep_project/views/Conteudo_Curso.dart';
 import 'package:ipcep_project/views/Home_Page.dart';
 import 'package:ipcep_project/views/Login.dart';
 
@@ -22,6 +23,10 @@ class MyApp extends StatelessWidget {
         AppRoutes.Home: (_) => const HomePage(),
         AppRoutes.Cadastrar: (_) => const Cadastrar(),
         AppRoutes.Login: (_) => const Login(),
+        AppRoutes.Curso_CuidadorInfantil: (_) => const Conteudo_Curso(),
+        // AppRoutes.Curso_Covid19: (_) => const ;
+        // AppRoutes.Curso_SaudeMental: (_) => ;
+        // AppRoutes.Curso_SaudeDigital: (_) => const;
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
