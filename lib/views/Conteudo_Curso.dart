@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:ipcep_project/views/widgets/Video_Player.dart';
 
 class Conteudo_Curso extends StatefulWidget {
   const Conteudo_Curso({super.key});
@@ -12,6 +13,9 @@ class Conteudo_Curso extends StatefulWidget {
 class _Conteudo_CursoState extends State<Conteudo_Curso> {
   @override
   Widget build(BuildContext context) {
+    double altura = MediaQuery.of(context).size.height;
+    double largura = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: AppBar(),
       body: Column(
@@ -24,7 +28,13 @@ class _Conteudo_CursoState extends State<Conteudo_Curso> {
                   child: Container(
                     color: Colors.black,
                     child: ListView(
-                      children: [],
+                      children: [
+                        SizedBox(
+                          height: altura * 1,
+                          width: largura * 1,
+                          child: VideoApp(),
+                        ),
+                      ],
                     ),
                   ),
                 ),
